@@ -9,5 +9,5 @@ struct ListNode {
 
 class AddLinkedListSolution {
  public:
-  ListNode *addTwoNumbers(ListNode *l1, ListNode *l2);
+  ListNode *AddTwoNumbers(ListNode *l1, ListNode *l2);
 };

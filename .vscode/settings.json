@@ -1,5 +1,6 @@
 {
 	"files.associations": {
+		"*.vli": "json",
 		"iostream": "cpp",
 		"cstddef": "cpp",
 		"cstdlib": "cpp",
@@ -49,7 +50,24 @@
 		"string_view": "cpp",
 		"thread": "cpp",
 		"cinttypes": "cpp",
-		"tuple": "cpp"
+		"tuple": "cpp",
+		"cwctype": "cpp",
+		"strstream": "cpp",
+		"bitset": "cpp",
+		"complex": "cpp",
+		"deque": "cpp",
+		"list": "cpp",
+		"unordered_map": "cpp",
+		"vector": "cpp",
+		"fstream": "cpp",
+		"functional": "cpp",
+		"future": "cpp",
+		"iomanip": "cpp",
+		"numeric": "cpp",
+		"optional": "cpp",
+		"sstream": "cpp",
+		"typeindex": "cpp"
 	},
-	"C_Cpp.clang_format_fallbackStyle": "Google"
+	"C_Cpp.clang_format_fallbackStyle": "Google",
+	"editor.tabSize": 2
 }

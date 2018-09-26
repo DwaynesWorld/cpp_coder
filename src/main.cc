@@ -1,18 +1,32 @@
-#include <addLinkedList.hpp>
 #include <iostream>
-#include <twoSum.hpp>
 #include <vector>
 
-void _twoSumSolution();
-void _addLinkedListSolution();
+#include "add_linkedlist.h"
+#include "median_of_two.h"
+#include "two_sum.h"
+
+void _MedianOfTwoSolution();
+void _TwoSumSolution();
+void _AddLinkedListSolution();
 
 main(int argc, char const* argv[]) {
-  _addLinkedListSolution();
-  _twoSumSolution();
+  _MedianOfTwoSolution();
+  _AddLinkedListSolution();
+  _TwoSumSolution();
   return 0;
 }
 
-void _addLinkedListSolution() {
+void _MedianOfTwoSolution() {
+  // std::vector<int> v1 = {1, 2, 3};
+  // std::vector<int> v2 = {4, 5, 6, 7, 100};
+  std::vector<int> v1 = {1, 3};
+  std::vector<int> v2 = {2};
+  MedianOfTwoSolution solution;
+  auto median = solution.FindMedianSortedArraysB(v1, v2);
+  std::cout << "Median: " << median << std::endl;
+}
+
+void _AddLinkedListSolution() {
   ListNode node1_1(2);
   ListNode node1_2(4);
   ListNode node1_3(3);
@@ -28,7 +42,7 @@ void _addLinkedListSolution() {
   node2_2.next = &node2_3;
 
   auto solution = AddLinkedListSolution();
-  auto result = solution.addTwoNumbers(&node1_1, &node2_1);
+  auto result = solution.AddTwoNumbers(&node1_1, &node2_1);
   if (result != nullptr) {
     std::string r = std::to_string(result->val);
 
@@ -45,12 +59,12 @@ void _addLinkedListSolution() {
   return;
 }
 
-void _twoSumSolution() {
+void _TwoSumSolution() {
   int target = 9;
   std::vector<int> input = {2, 7, 11, 15};
 
   auto solution = TwoSumSolution();
-  auto result = solution.twoSum(input, target);
+  auto result = solution.TwoSum(input, target);
   if (result.size() == 2) {
     std::cout << "Indexes: (" << result[0] << ", " << result[1] << ")"
               << std::endl;
